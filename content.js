@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("✅ Content script loaded successfully!");
+    console.log(" Content script loaded successfully!");
 
-    // Utility function to wait for elements
     function waitForElement(selector, callback, interval = 500, maxAttempts = 20) {
         let attempts = 0;
         const checkExist = setInterval(() => {
@@ -15,8 +14,6 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         }, interval);
     }
-
-    // ✅ Fix for "Start Career Analysis"
     waitForElement("#start-career-analysis", (button) => {
         button.addEventListener("click", function () {
             console.log("🎯 Start Career Analysis button clicked!");
@@ -30,7 +27,6 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });    
 
-    // ✅ Fix for "Video Consultancy"
     waitForElement("#video-consultancy", (button) => {
         button.addEventListener("click", function () {
             console.log("📹 Video Consultancy button clicked!");
