@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>WsCube Extension</title>
-  <link rel="stylesheet" href="styles.css">
+    <title>Career Mapping</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Career Mapping Tool</h1>
-  
-  <button id="startAnalysis">Start Career Analysis</button>
-  <button id="liveConsultation">Start Live Video Consultation</button>
-  <button id="openCareerMapping">Launch Tool</button>
-  
-  <div id="results"></div>
-  
-  <script src="popup.js"></script>
+    <div class="popup-content">
+        <h2>Career Mapping Tool</h2>
+        <button id="launch-quiz">Start Career Analysis</button>
+
+        <div id="quiz-container" style="display: none;"></div>
+    </div>
+
+    <script src="popup.js"></script>
 </body>
 </html>

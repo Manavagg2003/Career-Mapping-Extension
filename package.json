@@ -8,10 +8,18 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "This browser extension integrates directly into WsCube’s website, providing:\r - AI-powered career recommendations\r - Live video consultations\r - Resume analysis and job finder\r - Personalized career paths",
   "dependencies": {
     "axios": "^1.8.2",
     "cors": "^2.8.5",
     "express": "^4.21.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Manavagg2003/Career-Mapping-Extension.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Manavagg2003/Career-Mapping-Extension/issues"
+  },
+  "homepage": "https://github.com/Manavagg2003/Career-Mapping-Extension#readme"
 }

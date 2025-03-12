@@ -1,39 +1,38 @@
 {
-    "manifest_version": 3,
-    "name": "AI Career Mapping Tool",
-    "version": "1.1",
-    "description": "Guides students with AI-powered career recommendations.",
-    "permissions": [
-      "activeTab",
-      "scripting",
-      "storage"
-    ],
-    "host_permissions": [
-      "https://*.wscubetech.com/*"
-    ],
-    "background": {
-      "service_worker": "service_worker.js"
-    },
-    "content_scripts": [
-      {
-        "matches": ["https://*.wscubetech.com/*"],
-        "js": ["content.js"],
-        "run_at": "document_idle"
-      }
-    ],
-    "web_accessible_resources": [
-        {
-          "resources": ["career_analysis.html", "career_tool.html"],
-          "matches": ["<all_urls>"]
-        }
-      ],
-    "action": {
-      "default_popup": "popup.html",
-      "default_icon": {
-        "16": "icons/icon16.png",
-        "48": "icons/icon48.png",
-        "128": "icons/icon128.png"
-      }
+  "manifest_version": 3,
+  "name": "AI Career Mapping Tool",
+  "version": "1.1",
+  "description": "Guides students with AI-powered career recommendations.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.wscubetech.com/*"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://*.wscubetech.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["career_analysis.html", "career_tool.html", "quiz.html","quiz.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
     }
   }
-  
+}

@@ -30,7 +30,3 @@ This browser extension integrates directly into WsCube’s website, providing:
 - ResumeScorer API
 - JSearch API
 - OneSignal API for notifications
-
-
-## Note for WsCube
-- This extension will only work on WsCube website for any other website it may access for admin permissions.

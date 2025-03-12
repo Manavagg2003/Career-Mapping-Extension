@@ -29,7 +29,7 @@ function injectCareerMappingButton() {
         z-index: 9999;`;
 
     careerButton.onclick = function () {
-        window.open("https://your-extension-url.com", "_blank");
+        window.open('chrome-extension://lakgmejcoeblggbgnjjfgkmofkokfbge/popup.html', "_blank");
     };
 
     document.body.appendChild(careerButton);
