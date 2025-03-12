@@ -26,7 +26,6 @@ const questions = [
 let userAnswers = [];
 let currentQuestionIndex = 0;
 
-// Function to display questions
 function displayQuestion() {
     const quizContent = document.getElementById("quiz-content");
     const questionData = questions[currentQuestionIndex];
@@ -48,8 +47,6 @@ function displayQuestion() {
 
     document.getElementById("submit-quiz").addEventListener("click", submitQuiz);
 }
-
-// Function to handle quiz submission
 async function submitQuiz() {
     const selectedOption = document.querySelector('input[name="answer"]:checked');
     
@@ -67,8 +64,6 @@ async function submitQuiz() {
         await getCareerSuggestion();
     }
 }
-
-// Function to get career suggestions using OpenAI API
 async function getCareerSuggestion() {
     const quizContent = document.getElementById("quiz-content");
 
@@ -81,7 +76,7 @@ async function getCareerSuggestion() {
         const response = await fetch("https://api.openai.com/v1/chat/completions", {
             method: "POST",
             headers: {
-                "Authorization": "Bearer " + API_KEY,  // FIXED
+                "Authorization": "Bearer " + API_KEY,  
                 "Content-Type": "application/json"
             },
             body: JSON.stringify({
@@ -104,6 +99,4 @@ async function getCareerSuggestion() {
         quizContent.innerHTML = `<p>Error in fetching details due to insufficient data or lack of APIs. Please check the code.</p>`;
     }
 }
-
-// Initial Display
 displayQuestion();
