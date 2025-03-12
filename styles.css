@@ -29,7 +29,7 @@ button {
 
 #quiz-container {
     width: 100%;
-    max-width: 350px; /* Adjust width for better layout */
+    max-width: 350px; 
     padding: 15px;
     background: #ffffff;
     font-size: 15px;
